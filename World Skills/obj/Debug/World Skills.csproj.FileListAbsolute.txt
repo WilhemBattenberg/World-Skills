@@ -1,0 +1,16 @@
+C:\Users\isles\Desktop\World Skills\World Skills\bin\Debug\World Skills.exe.config
+C:\Users\isles\Desktop\World Skills\World Skills\bin\Debug\World Skills.exe
+C:\Users\isles\Desktop\World Skills\World Skills\bin\Debug\World Skills.pdb
+C:\Users\isles\Desktop\World Skills\World Skills\obj\Debug\World Skills.csprojResolveAssemblyReference.cache
+C:\Users\isles\Desktop\World Skills\World Skills\obj\Debug\World_Skills.Form1.resources
+C:\Users\isles\Desktop\World Skills\World Skills\obj\Debug\World_Skills.Properties.Resources.resources
+C:\Users\isles\Desktop\World Skills\World Skills\obj\Debug\World Skills.csproj.GenerateResource.cache
+C:\Users\isles\Desktop\World Skills\World Skills\obj\Debug\World Skills.csproj.CoreCompileInputs.cache
+C:\Users\isles\Desktop\World Skills\World Skills\obj\Debug\World Skills.exe
+C:\Users\isles\Desktop\World Skills\World Skills\obj\Debug\World Skills.pdb
+C:\Users\isles\Desktop\World Skills\World Skills\obj\Debug\World_Skills.Reg.resources
+C:\Users\isles\Desktop\World Skills\World Skills\obj\Debug\World_Skills.Customer.resources
+C:\Users\isles\Desktop\World Skills\World Skills\obj\Debug\World_Skills.Manager.resources
+C:\Users\isles\Desktop\World Skills\World Skills\obj\Debug\World_Skills.Storekeeper.resources
+C:\Users\isles\Desktop\World Skills\World Skills\obj\Debug\World_Skills.Tissue__List.resources
+C:\Users\isles\Desktop\World Skills\World Skills\obj\Debug\World_Skills.Fittings.resources
