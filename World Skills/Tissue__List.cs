@@ -28,6 +28,7 @@ namespace World_Skills
         {
             // TODO: данная строка кода позволяет загрузить данные в таблицу "mySQLDataSet.Ткани". При необходимости она может быть перемещена или удалена.
             this.тканиTableAdapter.Fill(this.mySQLDataSet.Ткани);
+           
             // Выравниваем форму по центру
             standart.center__screen(this);
 
@@ -35,20 +36,34 @@ namespace World_Skills
 
             // Красим форму в стандартный цвет
             this.BackColor = standart.main_colors;
+
+            // Добавляем заголовок 
             comboBox1.Items.Add("Нет");
+
+            // Запрос на получение данных для комбобокса
             string dat = connect.connection("Select [Артикул],[Название] from [Ткани]", true, "Get__Tissue");
+
+            // Заполнение комбобокса
             for (int i = 0; i < dat.Split('|').Length; i++)
                 comboBox1.Items.Add(dat.Split('|')[i]);
+
+            // Выбираем первый индекс
             comboBox1.SelectedIndex = 0;
         }
 
+
+        // Функция по выборке данных
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            // Если фильтра нет
             if(comboBox1.Items[comboBox1.SelectedIndex].ToString()=="Нет")
             {
+                // Без фильтра
                 тканиBindingSource.Filter = "";
                 return;
             }
+
+            // Создаём фильтр по артиклу
             тканиBindingSource.Filter = "Артикул = '"+ comboBox1.Items[comboBox1.SelectedIndex].ToString().Split(' ')[0]+ "'";
         }
     }

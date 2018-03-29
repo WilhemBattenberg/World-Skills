@@ -18,6 +18,7 @@ namespace World_Skills
         // Подключение класса для работы с бд
         Connecting connect = new Connecting();
 
+        // Переменная на выход к форме авторизации
         bool Login = false;
         public Storekeeper()
         {
@@ -35,32 +36,52 @@ namespace World_Skills
            
         }
 
+        // Функция выхода к авторизации
         private void exit_Click(object sender, EventArgs e)
         {
+            // Устанавливаем переход
             Login = true;
+            // Закрываем форму
             Close();
         }
 
+        // Выход из формы
         private void Storekeeper_FormClosing(object sender, FormClosingEventArgs e)
         {
+
+            // Если +, то открываем первую форму
             if (Login)
             {
+                // Создаём экземпляр 
                 Form1 fm = new Form1();
+            
+                // Открываем
                 fm.Show();
+
                 return;
             }
+
+            // Иначе закрываем приложение
             Application.Exit();
         }
 
+        // Открытие тканей
         private void tissue_Click(object sender, EventArgs e)
         {
+            // Создание экземпляра
             Tissue__List ts = new Tissue__List();
+
+            // Открываем форму
             ts.ShowDialog();
         }
 
+        // Открытие фурнитуры
         private void button1_Click(object sender, EventArgs e)
         {
+            // Создание экземпляра
             Fittings fit = new Fittings();
+
+            // Открываем форму
             fit.ShowDialog();
         }
     }

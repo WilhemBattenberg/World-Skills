@@ -12,10 +12,13 @@ namespace World_Skills
 {
     public partial class Customer : Form
     {
-        Main default__setting = new Main();
+        // Подключение класса для использование стандартных данных
+        Main standart = new Main();
 
+        // Подключение класса для работы с бд
         Connecting connect = new Connecting();
 
+        // Определяет выход из пользователя
         bool Login = false;
 
         public Customer()
@@ -25,25 +28,41 @@ namespace World_Skills
 
         private void Customer_Load(object sender, EventArgs e)
         {
-            this.BackColor = default__setting.main_colors;
-            default__setting.center__screen(this);
+            // Красим форму
+            this.BackColor = standart.main_colors;
+
+            // Выравниваем форму
+            standart.center__screen(this);
 
         }
 
+        // Нажатие выхода в авторизацию
         private void exit_Click(object sender, EventArgs e)
         {
+            // ставим +
             Login = true;
+
+            // Закрытие формы
             Close();
         }
 
+
+        // Завершение формы
         private void Customer_FormClosed(object sender, FormClosedEventArgs e)
         {
+            // Если да то перехо на авторизацию
             if(Login)
             {
+                // Создание экземпляра
                 Form1 fm = new Form1();
+
+                // Открытие формы
                 fm.Show();
+
+
                 return;
             }
+            // Иначе завершение приложения
             Application.Exit();
         }
     }

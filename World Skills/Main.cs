@@ -21,9 +21,11 @@ namespace World_Skills
 
         // Стандартный: размер, стиль текста
         public Font main__font = new Font("Times New Roman", (14.0f), new FontStyle());
-        
+
+        // Функция выравнивания по центру
         public void center__screen(Form fm)
         {
+            // Ставим локацию на центр
             fm.Location = new Point((Screen.PrimaryScreen.Bounds.Width - fm.Width) / 2, (Screen.PrimaryScreen.Bounds.Height - fm.Height) / 2);
         }
 

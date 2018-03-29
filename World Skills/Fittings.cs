@@ -26,24 +26,37 @@ namespace World_Skills
         {
             // TODO: данная строка кода позволяет загрузить данные в таблицу "mySQLDataSet.Фурнитура". При необходимости она может быть перемещена или удалена.
             this.фурнитураTableAdapter.Fill(this.mySQLDataSet.Фурнитура);
+
+            //  получение данных из груп бокса
             string cmd = connect.connection("Select Артикул, Наименование From Фурнитура", true, "Get__FUR");
+
+
+            // Добавление без фильтра
             comboBox1.Items.Add("Все");
+
+            // Заносим в гроуп бокс данные полученные ранее
             for(int i=0;i<cmd.Split('|').Length-1;i++)
             {
+                // Если нет, то убираем
                 if(cmd.Split('|')[i]!=" ")
                 comboBox1.Items.Add(cmd.Split('|')[i]);
             }
         }
 
+        // Прокрутка комбобокса
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //Если Все то выбираем без фильтра
             if(comboBox1.Items[comboBox1.SelectedIndex].ToString() == "Все")
             {
+
+                // Фильтр равен нулю
                 фурнитураBindingSource.Filter = "";
                 return;
             }
             else
             {
+                // Иначе выбираем по артиклю
                 фурнитураBindingSource.Filter = "Артикул = '"+ comboBox1.Items[comboBox1.SelectedIndex].ToString().Split(' ')[0]+"'";
             }
         }

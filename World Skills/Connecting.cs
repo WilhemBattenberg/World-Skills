@@ -73,12 +73,16 @@ namespace World_Skills
                                     }
                                 case "Get__Tissue":
                                     {
+                                        // Получение комбобокса Тканей
                                         answers += Read["Артикул"].ToString() + " " + Read["Название"].ToString()+"|";
+
                                         break;
                                     }
                                 case "Get__FUR":
                                     {
+                                        // Получение комбобокса Фурнитуры
                                         answers += Read["Артикул"].ToString() + " " + Read["Наименование"].ToString() + "|";
+
                                         break;
                                     }
                             }
@@ -91,15 +95,19 @@ namespace World_Skills
 
                         /* 
                           /////////////////////////////////////////////                        
-                                      Запрос с ожиданием ответа
+                                      Запрос без ответа
                           ////////////////////////////////////////////
                         */
-
                         com.ExecuteNonQuery();
+
                         return "";
                     }
+                    // Проверка на получение для групбокса
                     if (control__text == "Get__Tissue" || control__text == "Get__FUR")
+
+                        // возращаем строку
                         return answers;
+                    // Выводим Еrror
                     return "Error404";
                 }
 
