@@ -85,6 +85,11 @@ namespace World_Skills
 
                                         break;
                                     }
+                                case "Get__Picture":
+                                    {
+                                        return Read["Изображение"].ToString();
+                                    }
+
                             }
 
                         }
@@ -104,7 +109,12 @@ namespace World_Skills
                     }
                     // Проверка на получение для групбокса
                     if (control__text == "Get__Tissue" || control__text == "Get__FUR")
+                    {
 
+                        string d = answers;
+                        answers = "";
+                        return d;
+                    }
                         // возращаем строку
                         return answers;
                     // Выводим Еrror

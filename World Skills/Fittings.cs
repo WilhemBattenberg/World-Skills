@@ -30,6 +30,8 @@ namespace World_Skills
             //  получение данных из груп бокса
             string cmd = connect.connection("Select Артикул, Наименование From Фурнитура", true, "Get__FUR");
 
+            // Красим формы
+            this.BackColor = standart.main_colors;
 
             // Добавление без фильтра
             comboBox1.Items.Add("Все");

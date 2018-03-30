@@ -24,6 +24,7 @@ namespace World_Skills
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
             // Красим форму в стандартный цвет
             this.BackColor = standart.main_colors;
             

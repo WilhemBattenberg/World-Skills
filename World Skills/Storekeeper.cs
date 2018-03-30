@@ -84,5 +84,17 @@ namespace World_Skills
             // Открываем форму
             fit.ShowDialog();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AddFiting ad = new AddFiting();
+            ad.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Add__Factorias adFact = new Add__Factorias();
+            adFact.ShowDialog();
+        }
     }
 }

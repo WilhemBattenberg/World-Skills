@@ -65,5 +65,11 @@ namespace World_Skills
             // Иначе завершение приложения
             Application.Exit();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Design__Product design = new Design__Product();
+            design.ShowDialog();
+        }
     }
 }

@@ -14,3 +14,6 @@ C:\Users\isles\Desktop\World Skills\World Skills\obj\Debug\World_Skills.Manager.
 C:\Users\isles\Desktop\World Skills\World Skills\obj\Debug\World_Skills.Storekeeper.resources
 C:\Users\isles\Desktop\World Skills\World Skills\obj\Debug\World_Skills.Tissue__List.resources
 C:\Users\isles\Desktop\World Skills\World Skills\obj\Debug\World_Skills.Fittings.resources
+C:\Users\isles\Desktop\World Skills\World Skills\obj\Debug\World_Skills.AddFiting.resources
+C:\Users\isles\Desktop\World Skills\World Skills\obj\Debug\World_Skills.Add__Factorias.resources
+C:\Users\isles\Desktop\World Skills\World Skills\obj\Debug\World_Skills.Design__Product.resources

@@ -45,12 +45,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddFiting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFiting.Designer.cs">
+      <DependentUpon>AddFiting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add__Factorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add__Factorias.Designer.cs">
+      <DependentUpon>Add__Factorias.cs</DependentUpon>
+    </Compile>
     <Compile Include="Connecting.cs" />
     <Compile Include="Customer.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Customer.Designer.cs">
       <DependentUpon>Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Design__Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Design__Product.Designer.cs">
+      <DependentUpon>Design__Product.cs</DependentUpon>
     </Compile>
     <Compile Include="Fittings.cs">
       <SubType>Form</SubType>
@@ -78,6 +96,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Reg.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,8 +119,17 @@
     <Compile Include="Tissue__List.Designer.cs">
       <DependentUpon>Tissue__List.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddFiting.resx">
+      <DependentUpon>AddFiting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add__Factorias.resx">
+      <DependentUpon>Add__Factorias.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Customer.resx">
       <DependentUpon>Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Design__Product.resx">
+      <DependentUpon>Design__Product.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Fittings.resx">
       <DependentUpon>Fittings.cs</DependentUpon>
@@ -110,14 +142,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Reg.resx">
       <DependentUpon>Reg.cs</DependentUpon>
     </EmbeddedResource>

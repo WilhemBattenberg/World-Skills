@@ -90,7 +90,6 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::World_Skills.Properties.Resources.logo_01;
             this.pictureBox1.Location = new System.Drawing.Point(153, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(92, 68);
